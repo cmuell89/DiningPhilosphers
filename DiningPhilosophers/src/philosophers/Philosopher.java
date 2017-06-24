@@ -3,7 +3,7 @@ import diningroom.Fork;
 import java.util.concurrent.TimeUnit;
 
 public class Philosopher implements Runnable{
-    
+
 	private String name;
 	private Fork leftFork;
 	private Fork rightFork;
