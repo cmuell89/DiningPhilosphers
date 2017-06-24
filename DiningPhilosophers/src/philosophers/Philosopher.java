@@ -26,11 +26,10 @@ public class Philosopher implements Runnable{
 	
 	private void Eat() {
 
-        System.out.println("I, " + this.name + ", am eating!");
-
         if (leftFork.pickUp() == true) {
             if (rightFork.pickUp() == true) {
                 try {
+                    System.out.println("I, " + this.name + ", am eating!");
                     TimeUnit.MILLISECONDS.sleep((long)(Math.random() * 1000));
                 } catch (InterruptedException e) {
                     e.printStackTrace();
