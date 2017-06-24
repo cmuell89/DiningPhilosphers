@@ -37,6 +37,8 @@ public class Philosopher implements Runnable{
                 }
             }
         } else {
+//            Premption
+            leftFork.putDown();
             this.Eat();
         }
         leftFork.putDown();
