@@ -3,15 +3,13 @@ import diningroom.Fork;
 import java.util.concurrent.TimeUnit;
 
 public class Philosopher implements Runnable{
-
-	private int delay;
+    
 	private String name;
 	private Fork leftFork;
 	private Fork rightFork;
 
-	public Philosopher(String name, int delay, Fork leftForkRef, Fork rightForkRef){
+	public Philosopher(String name, Fork leftForkRef, Fork rightForkRef){
 		this.name = name;
-		this.delay = delay;
 		this.leftFork = leftForkRef;
 		this.rightFork = rightForkRef;
 	}
